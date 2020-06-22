@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel 360 | Seu painel</title>
+  <link rel="stylesheet" href="../src/style/scss/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <section class="menu--vertical">
+      <div class="menu--vertical__container">
+        <li class="menu-icon">
+          <a href="#">
+            <svg width="27" height="10" viewBox="0 0 27 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="26.9999" height="2" fill="white" />
+              <rect y="4" width="19" height="2" fill="white" />
+              <rect y="8" width="26.9999" height="1.99999" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu-home">
+          <a href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 24.354V17.0478H17.5V24.354H23.75V14.6124H27.5L15 3.65311L2.5 14.6124H6.25V24.354H12.5Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="menu-settings">
+          <a href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M16.25 14.7263H25V16.5528H16.25V14.7263ZM16.25 11.682H25V13.5086H16.25V11.682ZM16.25 17.7705H25V19.5971H16.25V17.7705ZM26.25 4.98465H3.75C2.375 4.98465 1.25 6.08058 1.25 7.42005V23.2502C1.25 24.5897 2.375 25.6856 3.75 25.6856H26.25C27.625 25.6856 28.75 24.5897 28.75 23.2502V7.42005C28.75 6.08058 27.625 4.98465 26.25 4.98465ZM26.25 23.2502H15V7.42005H26.25V23.2502Z" fill="white" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="30" height="29.2249" fill="white" transform="translate(0 0.113831)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-cluster">
+          <a href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25 16.032H5C4.3125 16.032 3.75 16.5799 3.75 17.2497V24.5559C3.75 25.2256 4.3125 25.7736 5 25.7736H25C25.6875 25.7736 26.25 25.2256 26.25 24.5559V17.2497C26.25 16.5799 25.6875 16.032 25 16.032ZM8.75 23.3382C7.375 23.3382 6.25 22.2423 6.25 20.9028C6.25 19.5633 7.375 18.4674 8.75 18.4674C10.125 18.4674 11.25 19.5633 11.25 20.9028C11.25 22.2423 10.125 23.3382 8.75 23.3382ZM25 3.85495H5C4.3125 3.85495 3.75 4.40292 3.75 5.07265V12.3789C3.75 13.0486 4.3125 13.5966 5 13.5966H25C25.6875 13.5966 26.25 13.0486 26.25 12.3789V5.07265C26.25 4.40292 25.6875 3.85495 25 3.85495ZM8.75 11.1612C7.375 11.1612 6.25 10.0652 6.25 8.72576C6.25 7.38629 7.375 6.29035 8.75 6.29035C10.125 6.29035 11.25 7.38629 11.25 8.72576C11.25 10.0652 10.125 11.1612 8.75 11.1612Z" fill="white"/>
+            </svg>              
+          </a>
+        </li>
+        <li class="menu-upload">
+          <a href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.5 12.6735L20 5.36732H5C3.625 5.36732 2.5 6.46326 2.5 7.80273V22.4273C2.5 23.7668 3.625 24.8506 5 24.8506L25 24.8384C26.375 24.8384 27.5 23.7546 27.5 22.4152V12.6735ZM18.75 7.19388L25.625 13.8912H18.75V7.19388Z" fill="white"/>
+            </svg>              
+          </a>
+        </li>
+      </div>
+    </section>
+    <section class="menu--horizontal">
+      <div class="menu--horizontal__container">
+        <div class="menu--searchBar">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.4034 13.75H22.4159L22.0659 13.4125C23.2909 11.9875 24.0284 10.1375 24.0284 8.125C24.0284 3.6375 20.3909 0 15.9034 0C11.4158 0 7.77832 3.6375 7.77832 8.125C7.77832 12.6125 11.4158 16.25 15.9034 16.25C17.9159 16.25 19.7659 15.5125 21.1909 14.2875L21.5284 14.6375V15.625L27.7784 21.8625L29.6409 20L23.4034 13.75ZM15.9034 13.75C12.7908 13.75 10.2783 11.2375 10.2783 8.125C10.2783 5.0125 12.7908 2.5 15.9034 2.5C19.0159 2.5 21.5284 5.0125 21.5284 8.125C21.5284 11.2375 19.0159 13.75 15.9034 13.75Z" fill="#B4B4B4"/>
+          </svg>            
+          <form class="search-form" action="/busca" method="GET">
+            <input class="text-search" name="ft" required="required" placeholder="O que você procura?" autocomplete="off"
+              maxlength="600" type="text" />
+          </form>
+        </div>
+        <div class="menu--options">
+          <div class="menu--options__edit">
+            <a href="#">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" fill="white"/>
+                <path d="M8.74982 17.5C6.67482 17.5 4.99982 19.175 4.99982 21.25C4.99982 22.8875 3.54982 23.75 2.49982 23.75C3.64982 25.275 5.61232 26.25 7.49982 26.25C10.2623 26.25 12.4998 24.0125 12.4998 21.25C12.4998 19.175 10.8248 17.5 8.74982 17.5ZM25.8873 5.78751L24.2123 4.11251C23.7248 3.62501 22.9373 3.62501 22.4498 4.11251L11.2498 15.3125L14.6873 18.75L25.8873 7.55001C26.3748 7.06251 26.3748 6.27501 25.8873 5.78751Z" fill="#B4B4B4"/>
+              </svg>  
+            </a>
+          </div> 
+          <div class="menu--options__alert">
+            <a href="#">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="29.9999" height="30" transform="translate(0.000488281)" fill="white"/>
+                <path d="M15.0001 27.5C16.3751 27.5 17.5001 26.375 17.5001 25H12.5002C12.5002 26.375 13.6126 27.5 15.0001 27.5ZM22.5001 20V13.75C22.5001 9.9125 20.4501 6.7 16.8751 5.85V5C16.8751 3.9625 16.0376 3.125 15.0001 3.125C13.9626 3.125 13.1251 3.9625 13.1251 5V5.85C9.53766 6.7 7.50017 9.9 7.50017 13.75V20L5.00018 22.5V23.75H25.0001V22.5L22.5001 20Z" fill="#B4B4B4"/>
+              </svg>     
+            </a>
+          </div>
+          <div class="menu--options__profile">
+            <a href="#">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30.0001" height="30" transform="translate(0.000244141)" fill="white"/>
+                <path d="M15 15C17.7626 15 20.0001 12.7625 20.0001 10C20.0001 7.2375 17.7626 5 15 5C12.2375 5 10 7.2375 10 10C10 12.7625 12.2375 15 15 15ZM15 17.5C11.6625 17.5 5 19.175 5 22.5V25H25.0001V22.5C25.0001 19.175 18.3376 17.5 15 17.5Z" fill="#B4B4B4"/>
+              </svg>                
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <div class="page-wrapper">
+    <div class="page-wrapper__content">
+      <section class="box-advertise">
+        <div class="box-advertise__text">
+          <h1>Bem vindo ao painel 360</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit eveniet obcaecati est voluptas, quo necessitatibus provident repellendus praesentium laudantium animi magni architecto distinctio adipisci fuga aliquid impedit possimus eligendi.</p>
+        </div>
+      </section>
+      <section class="box-informations">
+        <div class="box-informations__temperature">
+          <div class="box-informations__temperature--topBar">
+            <h4>Temperatura na sua cidade</h4>
+            <svg width="7" height="25" viewBox="0 0 7 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 3.5)" fill="#B4B4B4"/>
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 12.5)" fill="#B4B4B4"/>
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 21.5)" fill="#B4B4B4"/>
+            </svg>  
+          </div> 
+          <div class="box-informations__temperature--data">
+            <div class="box-informations__temperature--data__mainInfo">
+              <h1 id="cityName">Nome da cidade</h1>
+              <p id="date">Dia e hora</p>
+              <p id="climate">Clima</p>
+            </div>
+            <div class="box-informations__temperature--data__details">
+              <div class="box-informations__temperature--data__details-rain">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="15" height="15" fill="white"/>
+                  <path d="M11.6213 10.1282C11.4961 10.1282 11.3945 10.0266 11.3945 9.90139C11.3945 9.77617 11.4961 9.67454 11.6213 9.67454C13.2342 9.67454 14.5459 8.36246 14.5459 6.75004C14.5459 5.13807 13.2338 3.82689 11.6213 3.82689C11.4861 3.82689 11.3432 3.83869 11.1717 3.86455C11.0746 3.87952 10.9785 3.82871 10.9349 3.74069C10.2344 2.32018 8.81979 1.4382 7.24321 1.4382C5.34496 1.4382 3.70259 2.72623 3.2489 4.5705C3.22349 4.67394 3.12277 4.73972 3.02296 4.7429L2.96534 4.73972C2.96398 4.73972 2.96262 4.73972 2.96125 4.73972C1.55934 4.73972 0.453693 5.84628 0.453693 7.20645C0.453693 8.56753 1.56116 9.67454 2.92269 9.67454C3.04791 9.67454 3.14954 9.77617 3.14954 9.90139C3.14954 10.0266 3.04791 10.1282 2.92269 10.1282C1.31117 10.1282 0 8.81752 0 7.20645C0 5.61762 1.27488 4.32051 2.85554 4.28467C3.41858 2.33243 5.19705 0.984507 7.24276 0.984507C8.93866 0.984507 10.4658 1.90369 11.2666 3.39407C11.3936 3.38001 11.5088 3.3732 11.6209 3.3732C13.4838 3.3732 14.9991 4.88808 14.9991 6.75004C15 8.6129 13.4842 10.1282 11.6213 10.1282Z" fill="#555555"/>
+                  <path d="M11.6213 10.1282C11.4961 10.1282 11.3945 10.0266 11.3945 9.9014C11.3945 9.77618 11.4961 9.67455 11.6213 9.67455C13.2342 9.67455 14.5458 8.36247 14.5458 6.75004C14.5458 5.13807 13.2337 3.8269 11.6213 3.8269C10.7765 3.8269 9.97306 4.19212 9.41728 4.82865C9.33516 4.92347 9.1918 4.933 9.09743 4.85043C9.00306 4.76831 8.99353 4.62494 9.07565 4.53058C9.71717 3.79514 10.645 3.37366 11.6213 3.37366C13.4842 3.37366 14.9995 4.88854 14.9995 6.7505C15 8.61291 13.4842 10.1282 11.6213 10.1282Z" fill="#555555"/>
+                  <path d="M3.75429 14.0155C3.73115 14.0155 3.70801 14.0118 3.68487 14.0046C3.56555 13.9665 3.50022 13.8385 3.53833 13.7192L3.95482 12.4239C3.99338 12.3046 4.12178 12.2393 4.24019 12.2774C4.35951 12.3155 4.4253 12.4434 4.38673 12.5628L3.97024 13.8585C3.93939 13.9542 3.85001 14.0155 3.75429 14.0155ZM4.58772 11.424C4.56458 11.424 4.54144 11.4204 4.51831 11.4131C4.39898 11.375 4.3332 11.247 4.37176 11.1277L4.78825 9.83197C4.82682 9.71265 4.9543 9.64823 5.07363 9.68543C5.19295 9.72354 5.25828 9.85148 5.22017 9.9708L4.80368 11.2666C4.77283 11.3627 4.6839 11.424 4.58772 11.424Z" fill="#555555"/>
+                  <path d="M8.29121 14.0155C8.26807 14.0155 8.24494 14.0118 8.2218 14.0046C8.10248 13.9665 8.03714 13.8385 8.07525 13.7192L8.49174 12.4239C8.53031 12.3046 8.6587 12.2393 8.77712 12.2774C8.89644 12.3155 8.96222 12.4434 8.92366 12.5628L8.50717 13.8585C8.47632 13.9542 8.38694 14.0155 8.29121 14.0155ZM9.12465 11.424C9.10151 11.424 9.07837 11.4204 9.05523 11.4131C8.93591 11.375 8.87012 11.247 8.90869 11.1277L9.32518 9.83197C9.36374 9.71265 9.49123 9.64823 9.61055 9.68543C9.72987 9.72354 9.79521 9.85148 9.7571 9.9708L9.3406 11.2666C9.30975 11.3627 9.22083 11.424 9.12465 11.424Z" fill="#555555"/>
+                  <path d="M6.02278 14.0155C5.99964 14.0155 5.9765 14.0118 5.95336 14.0046C5.83404 13.9665 5.76871 13.8385 5.80682 13.7192L6.22331 12.4239C6.26188 12.3046 6.39027 12.2393 6.50868 12.2774C6.62801 12.3155 6.69379 12.4434 6.65523 12.5628L6.23874 13.8585C6.20789 13.9542 6.11851 14.0155 6.02278 14.0155ZM6.85621 11.424C6.83308 11.424 6.80994 11.4204 6.7868 11.4131C6.66748 11.375 6.60169 11.247 6.64026 11.1277L7.05675 9.83197C7.09531 9.71265 7.2228 9.64823 7.34212 9.68543C7.46144 9.72354 7.52677 9.85148 7.48866 9.9708L7.07217 11.2666C7.04132 11.3627 6.9524 11.424 6.85621 11.424Z" fill="#555555"/>
+                </svg>                  
+                <p id="rain">Chuva - Sem informações</p>
+              </div>
+              <div class="box-informations__temperature--data__details-moisture">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M7.52954 2.69113C7.00253 1.95107 6.4643 1.17737 6.04942 0.370031C5.93729 0.14577 5.70182 0 5.45513 0C5.20844 0 4.97297 0.134557 4.86084 0.370031C4.45717 1.16616 3.94137 1.91743 3.44799 2.64628C2.45003 4.09276 1.51935 5.44954 1.51935 6.9633C1.51935 9.30683 3.16767 11 5.44391 11C7.74259 11 9.48061 9.26198 9.48061 6.9633C9.48061 5.46075 8.5275 4.11519 7.52954 2.69113ZM5.44391 10.5515C3.42557 10.5515 1.96787 9.03772 1.96787 6.9633C1.96787 5.59531 2.86491 4.28338 3.80681 2.90418C4.3114 2.16412 4.83841 1.39042 5.25329 0.571865C5.30936 0.459735 5.41028 0.448522 5.45513 0.448522C5.49998 0.448522 5.6009 0.459735 5.65696 0.571865C6.08306 1.40163 6.6325 2.18654 7.17072 2.94903C8.12383 4.31702 9.03209 5.60652 9.03209 6.9633C9.03209 9.00408 7.48469 10.5515 5.44391 10.5515Z" fill="#555555"/>
+                  <path d="M4.3899 3.29664C4.28898 3.22937 4.14321 3.25179 4.07593 3.35271C3.69469 3.93579 3.24616 4.60857 2.92098 5.29257C2.86492 5.4047 2.92098 5.53926 3.03311 5.59533C3.06675 5.60654 3.10039 5.61775 3.13403 5.61775C3.21252 5.61775 3.30223 5.5729 3.33587 5.49441C3.64983 4.83284 4.07593 4.18248 4.45718 3.62182C4.52446 3.50969 4.49082 3.37514 4.3899 3.29664Z" fill="#555555"/>
+                  <path d="M2.93221 5.85321C2.82008 5.80836 2.68552 5.86442 2.64067 5.97655C2.59582 6.0999 2.55096 6.22324 2.52854 6.34658C2.50611 6.46993 2.5846 6.58206 2.70795 6.6157C2.71916 6.6157 2.74159 6.6157 2.7528 6.6157C2.85372 6.6157 2.95463 6.53721 2.97706 6.43629C2.99949 6.33537 3.02191 6.23445 3.06677 6.13354C3.11162 6.03262 3.05555 5.90928 2.93221 5.85321Z" fill="#555555"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="11" height="11" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>                  
+                <p id="moisture">Umidade - Não detectado</p>
+              </div>
+              <div class="box-informations__temperature--data__details-wind">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.0652 1.95652C10.4468 1.95652 9.13043 3.27326 9.13043 4.8913C9.13043 5.0713 9.2762 5.21739 9.45652 5.21739C9.63685 5.21739 9.78261 5.0713 9.78261 4.8913C9.78261 3.63261 10.8068 2.60869 12.0652 2.60869C13.3236 2.60869 14.3478 3.63261 14.3478 4.8913C14.3478 6.15 13.3236 7.17391 12.0652 7.17391H0.326087C0.146087 7.17391 0 7.32 0 7.5C0 7.68 0.146087 7.82608 0.326087 7.82608H12.0652C13.6836 7.82608 15 6.50935 15 4.8913C15 3.27326 13.6836 1.95652 12.0652 1.95652Z" fill="#555555"/>
+                  <path d="M5.86957 1.30435C4.61087 1.30435 3.58696 2.32826 3.58696 3.58696C3.58696 3.76696 3.73304 3.91304 3.91304 3.91304C4.09304 3.91304 4.23913 3.76696 4.23913 3.58696C4.23913 2.68793 4.97054 1.95652 5.86957 1.95652C6.76859 1.95652 7.5 2.68793 7.5 3.58696C7.5 4.48598 6.76859 5.21739 5.86957 5.21739H0.326087C0.146087 5.21739 0 5.36348 0 5.54348C0 5.72348 0.146087 5.86957 0.326087 5.86957H5.86957C7.12826 5.86957 8.15217 4.84565 8.15217 3.58696C8.15217 2.32826 7.12826 1.30435 5.86957 1.30435Z" fill="#555555"/>
+                  <path d="M11.413 9.13045H0.326087C0.146087 9.13045 0 9.27653 0 9.45653C0 9.63653 0.146087 9.78262 0.326087 9.78262H11.413C12.3121 9.78262 13.0435 10.514 13.0435 11.413C13.0435 12.3121 12.3121 13.0435 11.413 13.0435C10.514 13.0435 9.78261 12.3121 9.78261 11.413C9.78261 11.233 9.63685 11.087 9.45652 11.087C9.2762 11.087 9.13043 11.233 9.13043 11.413C9.13043 12.6717 10.1547 13.6957 11.413 13.6957C12.6714 13.6957 13.6957 12.6717 13.6957 11.413C13.6957 10.1544 12.6714 9.13045 11.413 9.13045Z" fill="#555555"/>
+                </svg>                  
+                <p id="wind">Vento - Não detectado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-informations__documents">
+          <div class="box-informations__documents--topBar">
+            <h4>Documentos favoritos</h4>
+            <svg width="7" height="25" viewBox="0 0 7 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 3.5)" fill="#B4B4B4"/>
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 12.5)" fill="#B4B4B4"/>
+              <circle r="3.5" transform="matrix(-1 0 0 1 3.5 21.5)" fill="#B4B4B4"/>
+            </svg>  
+          </div>
+          <div class="box-informations__documents--files">
+          </div>
+          <div class="box-informations__documents--allFiles">
+            <a href="#">
+              Ver todos >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="box-gallery">
+        <div class="box-gallery__title">
+          <h4>Galeria de fotos</h4>
+          <svg width="7" height="25" viewBox="0 0 7 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle r="3.5" transform="matrix(-1 0 0 1 3.5 3.5)" fill="#B4B4B4"/>
+            <circle r="3.5" transform="matrix(-1 0 0 1 3.5 12.5)" fill="#B4B4B4"/>
+            <circle r="3.5" transform="matrix(-1 0 0 1 3.5 21.5)" fill="#B4B4B4"/>
+          </svg>  
+        </div>
+        <div class="box-gallery__photos">
+          <ul class="box-gallery__photos-list">
+            <li class="box-gallery__photos-list--item">
+              <img src="../src/images/photos/paisagem-1.png" alt="Paisage 1" />
+            </li>
+            <li class="box-gallery__photos-list--item">
+              <img src="../src/images/photos/paisagem-2.png" alt="Paisage 2" />
+            </li>
+            <li class="box-gallery__photos-list--item">
+              <img src="../src/images/photos/paisagem-3.png" alt="Paisage 3" />
+            </li>
+            <li class="box-gallery__photos-list--item">
+              <img src="../src/images/photos/paisagem-4.png" alt="Paisage 4" />
+            </li>
+            <li class="box-gallery__photos-list--item">
+              <img src="../src/images/photos/paisagem-5.png" alt="Vitor" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script type="text/javascript" src="JS/index.js"></script>
+  </footer>
+</body>
+
+</html>
